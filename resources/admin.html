@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Carousel Template &middot; Bootstrap</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Le styles -->
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="./css/font-awesome.min.css" rel="stylesheet">
+		<link href="./css/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="./js/html5shiv.js"></script>
+		<![endif]-->
+
+		<!-- Fav and touch icons -->
+		<link rel="shortcut icon" href="./img/icon/favicon.png">
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>admin</h1>
+				<i class="icon-file-alt"></i>
+			</header>
+			<nav></nav>
+
+			<div>
+				<table class="table table-hover" id="regInfoTable">
+					<thead>
+						<tr>
+							<th>objectId</th>
+							<th>lastName</th>
+							<th>firstName</th>
+							<th>tel</th>
+							<th>email</th>
+							<th>company</th>
+							<th>createTime</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+
+			</div>
+
+			<footer>
+				<p>
+					SAP
+				</p>
+			</footer>
+		</div>
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="./js/jquery.js"></script>
+		<script src="./js/bootstrap-transition.js"></script>
+		<script src="./js/bootstrap-alert.js"></script>
+		<script src="./js/bootstrap-modal.js"></script>
+		<script src="./js/bootstrap-dropdown.js"></script>
+		<script src="./js/bootstrap-scrollspy.js"></script>
+		<script src="./js/bootstrap-tab.js"></script>
+		<script src="./js/bootstrap-tooltip.js"></script>
+		<script src="./js/bootstrap-popover.js"></script>
+		<script src="./js/bootstrap-button.js"></script>
+		<script src="./js/bootstrap-collapse.js"></script>
+		<script src="./js/bootstrap-carousel.js"></script>
+		<script src="./js/bootstrap-typeahead.js"></script>
+		<script src="./js/holder/holder.js"></script>
+		<script src="./js/main.js"></script>
+		<script>
+			$(function() {
+				var jqxhr = $.ajax({
+					url : "/getRegInfo",
+					type : "GET",
+					data : {
+						// id : "528748aaaa037d5836000001"
+					}
+				}).done(function(data) {
+					console.log(data);
+					for (var i = 0; i < data.length; i++) {
+						var item=data[i];
+						var table = $("#regInfoTable");
+						var tbody = table.find("tbody");
+						var tr = $("<tr>");
+						tr.append($("<td>").text(item._id));
+						tr.append($("<td>").text(item.lastName));
+						tr.append($("<td>").text(item.firstName));
+						tr.append($("<td>").text(item.tel));
+						tr.append($("<td>").text(item.email));
+						tr.append($("<td>").text(item.company));
+						tr.append($("<td>").text(item.createTime));
+						tbody.append(tr);
+					};
+					
+				}).fail(function() {
+				}).always(function() {
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SAP Anywhere</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="./img/icon/favicon.ico">
+</head>
+
+<body>
+
+  <nav id="navigationBar" class="navbar navbar-static-top affix" data-spy="affix" data-offset-top="426">
+      <div class="navbar-inner">
+        <div class="container">
+            <a href="#" class="brand"><img src="./img/logo.png"
+                                           data-at2x="../img_fiori/logo@2x.png" alt="logo" width="62" height="31">
+                <span>SAP Anywhere</span></a>
+            <ul class="nav pull-right">
+                <li class="hidden-phone"><a href="#overview">Overview</a></li>
+                <li class="hidden-phone"><a href="#features">Features</a></li>
+                <li class="hidden-phone"><a href="#support">Support</a></li>
+                <li><button class="btn btn-flat button-try">Request Trial</button></li>
+            </ul>
+        </div>
+        <!-- <div class="container">                                                                               -->
+        <!--   <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">    -->
+        <!--     <span class="icon-bar"></span>                                                                    -->
+        <!--     <span class="icon-bar"></span>                                                                    -->
+        <!--     <span class="icon-bar"></span>                                                                    -->
+        <!--   </button>                                                                                           -->
+        <!--   <a class="brand" href="#">Project name</a>                                                          -->
+        <!--   <div class="nav-collapse collapse">                                                                 -->
+        <!--     <ul class="nav">                                                                                  -->
+        <!--       <li class="active"><a href="#">Home</a></li>                                                    -->
+        <!--       <li><a href="#about">About</a></li>                                                             -->
+        <!--       <li><a href="#contact">Contact</a></li>                                                         -->
+        <!--       <li class="dropdown">                                                                           -->
+        <!--         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a> -->
+        <!--         <ul class="dropdown-menu">                                                                    -->
+        <!--           <li><a href="#">Action</a></li>                                                             -->
+        <!--           <li><a href="#">Another action</a></li>                                                     -->
+        <!--           <li><a href="#">Something else here</a></li>                                                -->
+        <!--           <li class="divider"></li>                                                                   -->
+        <!--           <li class="nav-header">Nav header</li>                                                      -->
+        <!--           <li><a href="#">Separated link</a></li>                                                     -->
+        <!--           <li><a href="#">One more separated link</a></li>                                            -->
+        <!--         </ul>                                                                                         -->
+        <!--       </li>                                                                                           -->
+        <!--     </ul>                                                                                             -->
+        <!--     <form class="navbar-form pull-right">                                                             -->
+        <!--       <input class="span2" type="text" placeholder="Email">                                           -->
+        <!--       <input class="span2" type="password" placeholder="Password">                                    -->
+        <!--       <button type="submit" class="btn">Sign in</button>                                              -->
+        <!--     </form>                                                                                           -->
+        <!--   </div>|+/.nav-collapse +|                                                                           -->
+        <!-- </div>                                                                                                -->
+
+      </div>
+    </nav>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./img/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./img/slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./img/slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+<div class="container content">
+
+
+    <section class=" row-fluid " id="overview">
+        <div class="offset1" style="">
+            <h3>Overview</h3>
+
+            <p>
+                What if SAP applications were simple and easy to use? Now that’s a reality!
+                <br/><br/>
+                <strong>Introducing SAP Fiori</strong> - A collection of apps with <br/>
+                a simple and easy to use experience for broadly <br/> and frequently used SAP software functions that work  <br/>seamlessly across devices – desktop,  <br/>tablet, or smartphone.
+                <br/><br/>
+                <!-- <a id="watchVideo" class="btn btn-flat" href="#video-modal" data-toggle="modal">Watch video</a> -->
+            </p>
+        </div>
+        <img class="lazy-fading" src="./img/section1.png" data-at2x="../img_fiori/section1@2x.png"
+             alt="section1" width="840" height="437">
+    </section>
+
+    <section class=" row-fluid" id="features">
+        <div class="span5 offset1">
+            <h3>Keeping Simple <br/>Things Simple</h3>
+
+            <p>Imagine being able to quickly enter your time, check your sales orders, approve requests and more from anywhere. The first release of SAP Fiori includes <a class="linkStyled" href="/fiori/apps">25 apps</a> for the most common functions for workflow approvals, information lookups and self-service tasks.
+            </p>
+        </div>
+        <div class="span6"><img class="lazy-fading" src="./img/section3.png"
+                                data-at2x="../img_fiori/section3@2x.png" alt="LandingPage_on_iphone"></div>
+    </section>
+    <section class=" row-fluid" id="mobility">
+        <div class="span6"><img class="lazy-fading" src="./img/section2.png"
+                                data-at2x="../img_fiori/section2@2x.png" alt="Kelley_on_mac"></div>
+        <div class="span6">
+            <h3>Leverage SAP Investment</h3>
+
+            <p>SAP Fiori enables you to leverage your existing SAP investments by delivering powerful business results. You can get started with SAP Fiori immediately and bring instant value to all your employees.</p>
+			<button class="btn btn-flat button-learn" onclick="window.location = 'http://event.on24.com/r.htm?e=612512&s=1&k=731179FF11CE9726E5F0FAAB548A5715&partnerref=FioriMicrosite';">Learn more</button>
+        </div>
+
+    </section>
+
+
+    <section class="" id="demos">
+        <h3>See it in action</h3>
+
+        <div class="row-fluid">
+		
+            <div id="switcher-panel" class="span8"></div>
+
+            <div id="profile1-content" class="span8" style="display:none;">
+            
+            </div>
+
+            <div id="profile2-content" class="span8" style="display:none;">
+            
+            </div>
+
+                <div id="profile3-content" class="span8" style="display:none;">
+            
+            </div>
+
+            <div id="profile4-content" class="span8" style="display:none;">
+            
+            </div>
+
+            <div class="span4 no-margin-left" id="profile-view">
+                <!-- <ul>                                                                                                                           -->
+                <!--     <li><a id="profile1" rel="https://experience.sap.com/videos/TimeSheetApproval" class="active switcher"><img                -->
+                <!--             src="./img/profile1-active.png"                                                                                    -->
+                <!--             data-at2x="../img_fiori/profile1-active@2x.png" alt=""/><span><p>Philipp</p>                                       -->
+
+                <!--         <p>Manager</p></span></a></li>                                                                                         -->
+                <!--     <li><a id="profile2" rel="https://experience.sap.com/videos/TimeSheetEntry" class="switcher"><img src="./img/profile2.png" -->
+                <!--                                                data-at2x="../img_fiori/profile2@2x.png"                                        -->
+                <!--                                                alt=""/><span><p>Elaine</p>                                                     -->
+
+                <!--         <p>Employee</p></span></a></li>                                                                                        -->
+                <!--     <li><a id="profile3" rel="https://experience.sap.com/videos/OrderTracking" class="switcher"><img src="./img/profile3.png"  -->
+                <!--                                                data-at2x="../img_fiori/profile3@2x.png"                                        -->
+                <!--                                                alt=""/><span><p>Daniel</p>                                                     -->
+
+                <!--         <p>Sales Rep</p></span></a></li>                                                                                       -->
+                <!--     <li><a id="profile4" rel="https://experience.sap.com/videos/StockOverview" class="switcher"><img src="./img/profile4.png"  -->
+                <!--                                                data-at2x="../img_fiori/profile4@2x.png"                                        -->
+                <!--                                                alt=""/><span><p>Hannah</p>                                                     -->
+                <!--         <p>Purchasing Agent</p></span></a></li>                                                                                -->
+                <!-- </ul>                                                                                                                          -->
+            </div>
+        </div>
+		<div class="span6">
+            <h3>SAP Fiori - For Managers <strong>(NEW)</strong></h3>
+
+            <p>
+                See how SAP Fiori helps managers process workflow approvals, information lookups and self-service tasks with a simple and easy to use experience that works across devices, including desktop, tablet and smartphone.
+                <br/><br/>
+				<button class="btn btn-flat" onclick="window.location = 'http://www.youtube.com/watch?v=M1CtjY7hsDM&feature=youtu.be';">Watch video</button>
+            </p>
+        </div>
+		<div class="span6">
+            <h3>SAP Fiori - For Employees <strong>(NEW)</strong></h3>
+
+            <p>
+                See how SAP Fiori enables employees be more productive with a simple and easy to use experience that works across devices, including desktop, tablet and smartphone.
+				<br/><br/>
+				<button class="btn btn-flat" onclick="window.location = 'http://www.youtube.com/watch?v=hGhYJRajP3g&feature=youtu.be';">Watch video</button>
+            </p>
+        </div>
+    </section>
+
+    <section class="end">
+        <img class="ruler" src="./img/ruler.png" alt="">
+
+        <!-- <div class="row-fluid">                                                                                                                                                                                      -->
+        <!--     <div class="span6">                                                                                                                                                                                      -->
+        <!--         <h3>Want to know more?</h3>                                                                                                                                                                          -->
+
+
+
+        <!--         <div class="contact">                                                                                                                                                                                -->
+        <!--             <span><a class="emailUs" href=""><img class="icon_mail"                                                                                                                                          -->
+        <!--                                                   src="./img/glyphicons_010_envelope.png"                                                                                                                    -->
+        <!--                                                   alt="">Email us</a></span>                                                                                                                                 -->
+        <!--         </div>                                                                                                                                                                                               -->
+        <!--     </div>                                                                                                                                                                                                   -->
+
+        <!--     <div class="span6">                                                                                                                                                                                      -->
+        <!--         <h3>Spread the Word</h3>                                                                                                                                                                             -->
+        <!--         <ul class="social-icons">                                                                                                                                                                            -->
+        <!--             <li><a  class="social-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://experience.sap.com/fiori" onclick="javascript:window.open(this.href,                                  -->
+        <!--                     '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Facebook</a></li>                                                                          -->
+        <!--             <li><a class="social-twitter" href="https://twitter.com/intent/tweet?text=SAP%20Fiori&tw_p=tweetbutton&url=https%3A%2F%2Fexperience.sap.com%2Ffiori" onclick="javascript:window.open(this.href,  -->
+        <!--                     '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Twitter</a></li>                                                                           -->
+        <!--             <li><a class="social-google" href="https://plus.google.com/share?url=https://experience.sap.com/fiori" onclick="javascript:window.open(this.href,                                                -->
+        <!--                     '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google+</a></li>                                                                           -->
+        <!--             <li><a class="social-linkedin" href="http://www.linkedin.com/cws/share?url=https%3A%2F%2Fexperience.sap.com%2Ffiori&token=&isFramed=false&lang=en_US" onclick="javascript:window.open(this.href, -->
+        <!--                     '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">LinkedIn</a></li>                                                                          -->
+        <!--         </ul>                                                                                                                                                                                                -->
+
+
+        <!--     </div>                                                                                                                                                                                                   -->
+        <!-- </div>                                                                                                                                                                                                       -->
+    </section>
+
+
+      <!-- trail request -->
+      <!-- Button to trigger modal -->
+      <div class="apply-form">
+        <button href="#trailApply" role="button" class="btn btn-large btn-primary btn-flat" data-toggle="modal">Request Trial</button>
+
+        <!-- Modal -->
+        <div id="trailApply" data-backdrop="true" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Modal header</h3>
+          </div>
+          <form method="post" action="../uploadForm">
+            <div class="modal-body" id="formBody">
+
+              <div class="field">
+                <label class="key label" for="lastName">Last Name</label>
+                <div class="value">
+                  <input class="" name="lastName" id="lastName" type="text" required placeholder="Last Name">
+                </div>
+              </div>
+              <div class="field">
+                <label class="key label" for="firstName">First Name</label>
+                <div class="value">
+                  <input class="" name="firstName" id="firstName" type="text" required placeholder="First Name">
+                </div>
+              </div>
+              <div class="field">
+                <label class="key label" for="tel">Tel</label>
+                <div class="value">
+                  <input class="" name="tel" id="tel"type="tel" required placeholder="Tel">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="key label" for="email">Email address</label>
+                <div class="value">
+                  <input class="" name="email" id="email" type="email" required placeholder="Email address">
+                </div>
+              </div>
+              <div class="field">
+                <label class="key label" for="company">Company</label>
+                <div class="value">
+                  <input class="" name="company" id="company" type="text" required placeholder="Company">
+                </div>
+              </div>
+
+              <div class="captcha-container">
+                <img id="captcha-img" src="def"/>
+                <i class="fa fa-refresh"></i>
+              </div>
+
+            <div class="field verifyCode" >
+              <label class="key label" for="input-code">Verification code</label>
+              <div class="value">
+                <input name="verifyCode" maxlength="6" id="input-code" type="text" required placeholder="Verification code">
+                <input name="verifyHush" id="verifyHush"  type="hidden">
+              </div>
+            </div>
+
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+              <button class="btn btn-primary disabled " id="btn-submit" type="submit" >Apply</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+
+</div><!-- end of content -->
+
+<footer>
+
+    <div class="container">© 2013 SAP AG or an SAP affiliate company. All rights reserved.
+        <span class="links pull-right">
+            <a href="#privacy-modal" data-toggle="modal">Privacy</a>
+            <a href="http://www.sap.com/corporate-en/legal/impressum.epx" target="_blank">Legal Disclosure</a>
+            <a href="http://www12.sap.com/corporate-en/legal/copyright/index.epx" target="_blank">Copyright</a>
+            <a href="#terms-modal" data-toggle="modal">Terms of Use</a>
+            <a href="http://www.sap.com/" target="_blank">SAP.com</a>
+            <a href="http://scn.sap.com/welcome" target="_blank">SAP Community Network</a>
+        </span>
+    </div>
+</footer>
+
+<div id="privacy-modal" class="super modal pp hide">
+    <div class="modal-header bg-white">
+        <h3>SAP User Experience Community Privacy Statement</h3>
+    </div>
+
+    <div class="modal-body bg-white">
+        <p>The SAP User Experience Community Privacy Statement (this “Privacy Statement”) covers the use of this website, www.experience.sap.com and any subpages which reference this Privacy Statement (the “Experience Community Website”). Some SAP entities, programs and/or sites may have their own, possibly different, privacy statements. We encourage you to read the privacy statements of each of the SAP websites or program information you visit or review.</p>
+
+        <h3>Consent</h3>
+
+        <p>By using this Website, you consent to the collection and use of the information as described here. If we decide to make changes to this Privacy Statement, we will post the changes on this site so that you will always know what information we collect, and how we use it.</p>
+
+        <p>From time to time, as may be required by applicable law, we may also seek your explicit consent to process certain data and information collected on this website or volunteered by you.</p>
+
+        <h3>Collection and Processing of Your Personal Data</h3>
+
+        <p>To serve you better and understand your needs and interests, SAP collects, exports, and uses personal information that you provide when you sign up for an account.</p>
+
+        <p>We may further collect and process any information and data that you volunteer to us, e.g. when you register for events, subscribe to newsletters or participate in online surveys, discussion groups or forums.</p>
+
+        <h3>Use and Purpose of Collected Personal Data</h3>
+
+        <p>The information SAP collects to understand your needs and interests helps SAP deliver a consistent and personalized experience. We will use such information only as described in this Privacy Statement and/or in the way we specify at the time of collection. Some of the ways we may use your personal data include, but are not limited to:</p>
+
+        <ul>
+            <li>To provide services that you have requested;</li>
+
+            <li>To keep you up to date on the latest product announcements, software updates, software upgrades, security patches, system enhancements, special offers, and other information. This may occasionally include information from other technology companies or business partners about products and services that can add value to your SAP products;
+            </li>
+
+            <li>To tailor information about our products and services to your individual interests. For example, during a visit to our site, it allows us to provide you with specific information on products and services that may be of interest;
+            </li>
+
+            <li>To provide the ability to create personal profile areas and view protected content;</li>
+
+
+            <li>To provide the ability to contact you and to provide customer feedback and support;
+
+            </li>
+
+            <li>To provide contests, sweepstakes or other marketing or promotional activities on the Experience Community Website. Personal data may be collected to administer those programs; <br/>
+                <br/>
+                To meet contractual obligations; and/or<br/><br/>
+
+            <li>To conduct voluntary questionnaires and surveys in order to provide better products and services to our customers and end users.</li>
+        </ul>
+
+        <h3>Email Addresses; Choice/Opt-Out</h3>
+
+        <p>We communicate with users who subscribe to our services on a regular basis via email, and we may also communicate by phone to resolve customer complaints or investigate suspicious transactions. We may use your email address to confirm your opening of an account, to send you information about changes to our products and services, and to send notices and other disclosures as required by law. Generally, users cannot opt out of these communications, but they will be primarily informational in nature rather than promotional.</p>
+
+        <p>SAP provides you the opportunity to exercise an opt-out choice if you do not want to receive other types of communication from us such as emails or updates from us regarding new services and products offered on this website or if you do not want us to share your personal information with third parties.</p>
+
+        <p>We do not share your e-mail address with others outside the SAP group of companies, which includes SAP AG and its affiliates (“SAP Group”), as necessary to provide services you request. Depending on how your e-mail application is set up, information about you may be transmitted automatically when you send e-mail to SAP.</p>
+
+        <h3>Sharing Your Personal Data</h3>
+
+        <p>By providing SAP with any personal data under this Privacy Statement, you consent, agree and confirm that your personal data will be processed in the United States of America.</p>
+
+        <p>Companies in the SAP Group may use the information internationally in connection with processing your inquiries and orders, to help improve our products and services and for processing and storage.</p>
+
+        <p>We may also share such information with business partners, service vendors, authorized third-party agents or contractors in order to provide a requested service or transaction, including hosting websites, hosting event and seminar registration and providing customer support, or providing you with information on products and services that may be of interest to you.
+
+        <p>We do not sell or rent your personal data to third parties for marketing purposes unless you have granted us permission to do so.</p>
+
+        <p>We may respond to subpoenas, court orders, or legal process by disclosing your personal data and other related information, if necessary. We also may choose to establish or exercise our legal rights or defend against legal claims.</p>
+
+        <p>Circumstances may arise where, whether for strategic or other business reasons, SAP decides to sell, buy, merge or otherwise reorganize businesses in some countries. Such a transaction may involve, in accordance with applicable law, the disclosure of personal information to prospective or actual purchasers, or the receipt of it from sellers. It is SAP's practice to seek appropriate protection for information in these types of transactions.</p>
+
+        <p>We may collect and possibly share personal data and any other additional information available to us in order to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of SAP's terms of use, or as otherwise required by law.</p>
+
+        <p>While visiting SAP's website you may be directed to content or functionality that is hosted by a third-party supplier. When information is collected on behalf of SAP exclusively, the appropriate SAP entity's privacy statement will be referenced on the site and will govern how information is used. Other, non-SAP sites, may have their own privacy statements and personal data collection, use, and disclosure practices. We strongly advise you to familiarize yourself with the privacy statements provided by these other non-SAP sites prior to providing them with any information.</p>
+
+        <h3>Links to Other Sites</h3>
+
+        <p>This site may contain links to other sites. SAP is not responsible for the privacy practices or the content of other websites outside the SAP Group of companies.</p>
+
+        <h3>Inquiries, Access and Updating Your Personal Data; Deletion of Account</h3>
+
+        <p>SAP needs your help in keeping the personal data you have shared with us accurate and up to date. If you are a registered user, you may make these updates yourself in your profile.</p>
+
+        <p>If you have any other questions about this privacy statement or if you wish to (1) inspect or delete the information we hold about you or (2) make a complaint about misuse of your personal data by another user, please contact:</p>
+
+        <p>Webmaster <a href="mailto:userexperiencecommunity@sap.com">userexperiencecommunity@sap.com</a>
+        </p>
+
+        <p>Please note that if you request that your data be deleted (or request SAP to discontinue processing such data), further use of the Experience Community Website will not be possible.</p>
+
+        <p>Revised and posted as of 19th December 2012</p>
+    </div>
+
+    <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn btn-flat linkToModal">Close</a>
+    </div>
+</div>
+
+<div id="terms-modal" class="super modal terms hide">
+    <div class="modal-header bg-white">
+        <h3>TERMS OF USE AGREEMENT FOR THE<br/>
+            SAP USER EXPERIENCE COMMUNITY MICROSITE</h3>
+    </div>
+
+    <div class="modal-body bg-white">
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            1. SCOPE</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            SAP AG, together with its wholly owned subsidiaries (collectively &quot;<strong>SAP</strong>&quot;) created the SAP User Experience Community Microsite (&quot;<strong>Experience Community Website</strong>&quot;), which includes other websites added to the Experience Community Website from time to time, to provide a forum where you (&quot;<strong>You</strong>&quot; or &quot;<strong>Your</strong>&quot;) and other IT leads, line of business heads, designers, partners, customers, users, and other interested parties in the broader SAP ecosystem (each, a &quot;<strong>User</strong>&quot; and collectively, &quot;<strong>Users</strong>&quot;) may browse and discuss the latest SAP solutions, technologies, services, and design methods as well as follow and connect with SAP designers and product specialists. If You are accessing and/or using the Experience Community Website on behalf of Your employer or as a consultant or agent of a third party (either &quot;<strong>Your Company</strong>&quot;), You represent and warrant that You have the authority to act on behalf of and bind Your Company to the terms of this Terms of Use Agreement (&quot;<strong>TOU</strong>&quot;) and everywhere in this TOU that refers to You or Your, shall also include Your Company.
+        </p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            2. ACCEPTANCE OF TERMS</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            Your access and use of the Experience Community Website, Content (defined in Section 3 below), or any forums, wikis, blogs, or services provided on the Experience Community Website (any &quot;<strong>Services</strong>&quot;), are subject to this TOU. Additionally, Your use of the Experience Community Website, Content, and the Services may also be subject to disclaimers, legal notices, click-through agreements, or other legal agreements (any, &quot;<strong>Additional Legal Terms</strong>&quot;), which may be posted on the Experience Community Website where applicable. This TOU and the applicable Additional Legal Terms (together &quot;<strong>Controlling Terms</strong>&quot;) form a legally binding agreement between You and SAP regarding Your access and use of the Experience Community Website, Content, and the Services. Whenever there is a conflict between the terms in this TOU and the Additional Legal Terms, the terms in the Additional Legal Terms shall control. By accessing or using the Experience Community Website, You accept and agree to abide by the terms of this TOU. If You do not agree to the terms of this TOU, You must not attempt to access or use the Experience Community Website. Your access and use of any SAP software or related documentation provided on the Experience Community Website (together &quot;<strong>SAP Software</strong>&quot;) shall be subject to a separate software license agreement made available to You at the time You access or download the SAP Software.
+        </p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            3. LICENSE</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            By transmitting or uploading any Content (defined below) to the Experience Community Website, You grant to SAP a perpetual, irrevocable, nonexclusive, worldwide, fully paid up and royalty free license to use such Content without restrictions of any kind and without any payment or other consideration of any kind, or permission or notification to You or any third party. The license shall include, without limitation, the irrevocable right to reproduce, prepare derivative works, combine with other works, alter, translate, distribute copies, display, perform, license the Content, and all rights therein; to make, have made, offer to sell, sell, lease, or otherwise distribute any Content or product containing the Content; and to practice any method, embodying such Content (including the right to sublicense any of the foregoing). You further represent and warrant to SAP that You have the right, title, and/or authority to grant such license to SAP. SAP may elect not to post or publish the Content that You send or upload. If SAP elects to post or publish the Content, SAP may in its sole discretion elect to remove the posted or published information from the Experience Community Website for any reason and without notice, even if SAP has previously indicated to You that SAP might or will adopt, post, or use Content You submitted. As used herein, &ldquo;<strong>Content</strong>&rdquo; shall mean any article, information, data, code, text, software, documentation, graphics, image, marketing material, video, photograph, message, suggestions, feedback, ideas, expression of ideas, other materials, or any posting to any forum, wiki, or blog to any web page on the Experience Community Website.
+        </p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            You acknowledge and agree that the relationship between You and SAP is not a confidential, fiduciary, or other special relationship. SAP shall have the right, but not the obligation, to use Your name, likeness, biography and other information about You in connection with any use of the Content You submit. Nothing in this Agreement shall prohibit or restrict SAP&rsquo;s right to create or obtain other submissions similar to or competitive with those submitted by You.</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            4. SAP MAY CONTACT YOU</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            SAP is not obligated to evaluate or provide any comments to You regarding Content You submit. At SAP&rsquo;s sole discretion, SAP may contact You with critiques, updates, feedback or questions regarding Your submission, including the status of SAP&rsquo;s evaluation of Your submission. In no event will any such contact or communication from SAP obligate SAP to adopt, use, post, provide a timeframe for evaluation, or even provide any additional communication regarding Your submission.</p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            SAP may also contact You for additional reasons, including (but not limited to) verifying account information, to providing notifications and updates, or for administrative purposes. Please read the <a
+                class="superModal" data-modal="pp"
+                href="">SAP User Experience Community Privacy Statement</a> for details.</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            5. CHANGE AND NOTICES</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            SAP reserves the right to make changes to this TOU and to modify, change or discontinue any part or all of Experience Community Website and/or the Services at any time. SAP shall notify You of any changes to this TOU when You visit the Experience Community Website and require You to accept such changes before continuing. SAP may make changes to its products, service offerings and SAP Software at any time without notice.</p>
+
+        <p>
+            THE MOST CURRENT VERSION OF THIS TOU CAN BE ACCESSED BY CLICKING THE &lsquo;TERMS OF USE&rsquo; LINK AT THE BOTTOM OF EACH WEB PAGE COMPRISING THE EXPERIENCE COMMUNITY WEBSITE.</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            6. CONFIDENTIAL INFORMATION</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            A. The Experience Community Website is intended to be a public forum and You agree not to provide SAP or other Users with any confidential or proprietary information that You or the owner of the information do not intend to become public information. Any Content that You send or upload to the Experience Community Website will be deemed to be NOT confidential or proprietary, and You expressly agree that You waive any trade secret or other confidentiality rights with respect to such Content.</p>
+
+        <p>
+            B. You agree not to reproduce any Confidential Information (defined below) to which You are provided access to through the Experience Community Website in any form except as authorized at the time of disclosure. Any reproduction of SAP Confidential Information shall remain the property of SAP and shall contain any and all confidential or proprietary notices or legends which appear on the original. You agree to (a) take all reasonable steps (defined below) to keep all Confidential Information strictly confidential; (b) to use Confidential Information solely as authorized at the time of disclosure and (d) not to disclose any Confidential Information to any party without the prior written consent of SAP. You do not acquire any rights in Confidential Information under this TOU. In no event shall You use Confidential Information to create, enhance, modify, rent, lease, loan, sell, distribute or create derivative works based on any SAP Software or Services, or compete with SAP Software or Services in whole or in part. As used herein, &lsquo;<strong>Confidential Information</strong>&rsquo; shall mean all trade secrets and other information or Services which SAP or third parties protect against unrestricted disclosure to others which is labeled Confidential, accessed through a restricted or non-public area of the Experience Community Website, accessed pursuant to software downloads, or reasonably identifiable as Confidential Information based on the type of information and the manner of its disclosure. &lsquo;<strong>Reasonable steps</strong>&rsquo; means those steps You and/or Your Company take to protect Your own similar Confidential Information, which shall not be less than a reasonable standard of care.
+        </p>
+
+        <p>
+            ALL UPLOADS BY YOU INTO THE EXPERIENCE COMMUNITY WEBSITE SHALL BE AT YOUR OWN RISK AND SAP TAKES NO RESPONSIBILITY FOR THE USE OR MISUSE OF ANY SUCH UPLOADED INFORMATION BY ANY OTHER USER OF THE EXPERIENCE COMMUNITY WEBSITE.</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            7. YOUR INFORMATION, PRIVACY, AND DATA PROTECTION</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            You must be at least 13 years of age or older to use the Experience Community Website. You are solely responsible to provide SAP with Your complete, true, and current User information and to keep Your User information accurate and up to date. You are solely responsible with regard to usage and security of Your password and any activities that occur under Your account. You shall not use the account of anyone else at any time. You understand and agree that SAP collects, uses, stores and otherwise processes Your personal information and utilization data and may share such data with third party service providers for the purposes of improving or providing the Services subject to the Experience Community Website Privacy Statement. You agree that SAP may access, preserve and disclose Your account information and/or Content if required to do so by law or to: (i) comply with a legal process; (ii) respond to claims that any Content violates the rights of third parties or (iii) protect the rights, property or personal safety of SAP, Users, and the public.</p>
+
+        <div>
+            YOU AGREE TO COMPLY WITH THE TERMS OF THE EXPERIENCE COMMUNITY WEBSITE PRIVACY STATEMENT, WHICH CAN BE FOUND BY BELOW OR BY CLICKING ON THE &lsquo;PRIVACY&rsquo; LINK AT THE BOTTOM OF EACH WEB PAGE COMPRISING THE EXPERIENCE COMMUNITY WEBSITE.</div>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            8. COPYRIGHT POLICY</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            All SAP Software is the copyrighted work of SAP. Unauthorized copying, distribution, modification, public display, or public performance of copyrighted works is an infringement of the copyright holder&rsquo;s rights. You agree that You will not use the Experience Community Website to infringe the Intellectual Property Rights of SAP or others in any way. You must not remove, overprint or deface any notice of copyright, trademark, logo, legend, or other notice of ownership from any originals or copies of SAP Software, third party software, or any Content accessed on the Experience Community Website. As used herein, &lsquo;<strong>Intellectual Property Rights</strong>&rsquo; means patents of any type, design rights, utility models or other similar invention rights, copyrights, trademarks, service marks, trade secret or confidentiality rights, and any other intangible property rights including applications for any of the foregoing, in any country, arising under statutory or common law or by contract and whether or not perfected, now existing or hereafter filed, issued, or acquired.
+        </p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            YOU AGREE TO COMPLY WITH THE TERMS OF THE SAP COPYRIGHT POLICY, WHICH CAN BE FOUND BY CLICKING ON &lsquo;COPYRIGHT&rsquo; LINK AT THE BOTTOM OF EACH WEB PAGE COMPRISING the EXPERIENCE COMMUNITY WEBSITE.</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            9. RESPONSIBILITY FOR LINKS AND CONTENT</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            SAP IS ONLY RESPONSIBLE OR LIABLE FOR THE CONTENT POSTED ON THE EXPERIENCE COMMUNITY WEBSITE TO THE EXTENT REQUIRED BY THE GERMAN TELEMEDIA ACT (TELEMEDIENGESETZ, TMG) OR AS OTHERWISE REQUIRED BY LAW. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, YOUR USE OF CONTENT SHALL BE AT YOUR OWN RISK. The Experience Community Website may contain links to external websites and information provided on such external websites by SAP partners and third-party service providers. SAP shall not be responsible for the contents of any linked website, or any changes or updates to such websites. You further agree that SAP shall not be directly or indirectly responsible or liable for any damage or loss caused or alleged to be caused by or in connection with Your use of or reliance on any content, goods or services available on or through any such linked website. Any Content, whether publicly posted or privately transmitted, is the sole responsibility of the person or entity providing the Content.&nbsp;</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            10. INTELLECTUAL PROPERTY RIGHTS</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            Subject to any licenses You grant to SAP pursuant to this TOU, You shall retain ownership of all Intellectual Property Rights in and to the Content provided by You on the Experience Community Website to the extent You are the owner or holder of the Intellectual Property Rights. Nothing in this TOU shall prohibit You from selling or licensing Your Content to any other party under a separate agreement, provided that, no such separate agreement may impact SAP&rsquo;s rights to such Content as set forth under Section 3 above or elsewhere in this TOU.</p>
+
+        <p>
+            All Intellectual Proprietary Rights to any SAP Software and the Services shall belong to SAP. Nothing in this TOU shall be deemed to give You the right to modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative words from, transfer, or sell any SAP Software for any reason unless otherwise permitted by law.&nbsp;</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            11. PERMISSIBLE USE OF THE EXPERIENCE COMMUNITY WEBSITE</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            You agree not to access or utilize the Experience Community Website, Content, or Services for purposes that are inconsistent with SAP&rsquo;s legitimate business interests.</p>
+        <ul>
+            <li>
+                You are permitted to use the Experience Community Website, Content, and the Services only in strict compliance with the terms of this TOU to obtain information, so long as that information is not being gathered for a use in any manner which is or could be detrimental to SAP (unless such use is otherwise protected by law), and/or to provide feedback or other constructive comments (positive and negative) to SAP.</li>
+            <li>
+                Use of the Experience Community Website, Content, and Services for any other purpose is prohibited without the express permission of SAP.</li>
+        </ul>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            12. TERMINATION AND ACCOUNTABILITY</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            In the event You are in material breach of the Controlling Terms or violate the SAP User Experience Community <a
+                class="superModal" data-modal="roe"
+                href="">Rules of Engagement</a>, SAP may, at its sole discretion, suspend or terminate Your account and refuse You any current or future use of the Experience Community Website. SAP may remove any Content posted on the Experience Community Website at SAP&rsquo;s sole discretion. SAP shall not be liable to You or any third party for any termination or change to the Experience Community Website and/or the Services. If You send or upload Content that is confidential or proprietary of a third party without that third party&rsquo;s permission, or, if You transmit or upload Content that is intended to infect, corrupt or otherwise disrupt the operation of the Experience Community Website or any other Users computer system, SAP may report You to the relevant authorities to ensure You are held accountable to the fullest extent of applicable laws.
+        </p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            You agree not to use the Experience Community Website to:</p>
+        <ul>
+            <li>
+                publish, upload, post, email, transmit or otherwise make available any Content that (a) You do not have the right to make available (b) is unlawful, harmful, vulgar, obscene, hateful, or racially, ethnically or otherwise objectionable; (c) infringes any Intellectual Property Rights of any party, (d) includes any unsolicited or unauthorized advertising, promotional materials, surveys, junk mail, spamming, chain letters, or any other form of solicitation, commercial or otherwise, or (e) contains a software virus, Trojan horse, worm, time bomb, cancelbot, corrupted file, or any other computer file or software designed to interrupt, destroy, damage or limit the functionality of any computer hardware, software or other property;</li>
+            <li>
+                defame, harass, abuse, stalk, threaten or violate the legal rights of others such as rights of privacy and publicity;</li>
+            <li>
+                impersonate any person or entity, including, but not limited to, an SAP official, SAP employee, or any other third party, or falsely state or otherwise misrepresent Your affiliation with a person or entity;</li>
+            <li>
+                forge email headers or otherwise manipulate identifiers in order to disguise the origin of any Content transmitted through the Services;</li>
+            <li>
+                download any file or Content posted by another User that You know, or reasonably should know, should not be legally reproduced, displayed, performed and/or distributed in such manner;</li>
+            <li>
+                interfere with or disrupt the Services, servers, or networks which support the Services, or disobey any requirements, procedures, policies or regulations of networks connected to the Services;</li>
+            <li>
+                violate any applicable local, state, national or international law and any regulations;</li>
+            <li>
+                harvest, collect, or store personal information or data of other Users.</li>
+        </ul>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            13. INDEMNITY</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            You agree to indemnify, defend, and hold SAP, its affiliates, subsidiaries, officers, agents, partners, employees, and licensors harmless from any claim or demand, including reasonable attorneys fees, made by any third party due to or arising out of Your Content, Your usage of the Experience Community Website or the Services, Your breach of the Controlling Terms, or Your violation of any other rights of a third party.</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            14. EXCLUSION OF SOFTWARE WARRANTIES</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            The Experience Community Website, Content, and Services are being provided to You AS IS. To the fullest extent allowable by law, SAP does not guarantee or warrant any features or qualities of the Experience Community Website, Content, or Services or give any undertaking with regard to any other quality. Statements and explanations to the Experience Community Website, Content, or Services in promotional material or on the Experience Community Website and in the documentation are made for explanatory purposes only; they are not meant to constitute any guarantee or warranty of certain features. No warranty or undertaking shall be implied by a User from any published SAP description of or advertisement except to the extent SAP has expressly confirmed such warranty or undertaking in writing. Warranties are validly given only with the express written confirmation of SAP&rsquo;s management.</p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            SAP does not represent or endorse the accuracy, reliability, completeness, usefulness, non-infringement of intellectual property rights, or quality of any (i) links to web-pages of third parties contained on the Experience Community Website, or the content obtainable on such web-pages or (ii) information provided by third parties on the Experience Community Website. SAP will not permanently control and/or review the linked web-pages and the information provided by third parties. SAP shall not be liable for damages caused by the use of the content on the linked web-pages and/or information, unless required by applicable law.</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            15. LIMITATION OF LIABILITY</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            FOR USERS IN GERMANY: SAP shall only be liable for damages occurred under the Service if such damage (i) can be claimed under the German Product Liability Act or (ii) is caused due to gross negligence or intentional misconduct by SAP, (iii) consists of personal injury or death or (iv) is caused due to a breach of a significant contractual obligation by SAP (wesentliche Vertragspflicht - in this case, SAP&rsquo;s liability is limited to such damages, which are typical for this type of agreement and predictable at the point in time of this TOU entering into force). In all other cases, neither SAP nor its employees, agents and subcontractors shall be liable for any kind of damage or claims hereunder.</p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            FOR USERS OUTSIDE OF GERMANY: SAP will not be liable or responsible in any way for any Content posted on the Experience Community Website or web pages linked to the Experience Community Website, including, but not limited to, any errors or omissions in Content, or for any losses or damage of any kind incurred as a result of the use of or reliance on any Content.</p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            <strong>TO THE EXTENT ALLOWABLE BY APPLICABLE LAW, SAP AND ITS AFFILIATES, SUBSIDIARIES, OFFICERS, EMPLOYEES, AGENTS, PARTNERS, AND LICENSORS ARE NOT LIABLE TO ANY USER FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, REVENUE, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES (EVEN IF SAP HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), HOWEVER CAUSED, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING OUT OF OR RESULTING FROM: (i) THE USE OR THE INABILITY TO USE THE EXPERIENCE COMMUNITY WEBSITE, SAP SOFTWARE, OR SERVICES; (ii) THE COST OF PROCUREMENT OF SUBSTITUTE GOODS AND SERVICES ARISING OUT OF YOUR USE OR INABILITY TO USE ANY SAP SOFTWARE, CONTENT, OR SERVICES PURCHASED OR OBTAINED DURING TRANSACTIONS CONDUCTED ON THE EXPERIENCE COMMUNITY WEBSITE; (iii) UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR TRANSMISSIONS OR DATA; (iv) STATEMENTS, MESSAGES, OR CONDUCT OF ANY THIRD PARTY ON THE EXPERIENCE COMMUNITY WEBSITE; OR (v) ANY OTHER MATTER RELATING TO THE EXPERIENCE COMMUNITY WEBSITE OR SERVICES. NOTWITHSTANDING ANYTHING TO THE CONTRARY HEREIN, THESE LIMITATIONS SHALL NOT APPLY IN CASE OF INTENT OR GROSS NEGLIGENCE BY SAP AND IN CASE OF SAP&rsquo;S STATUTORY LIABILITY FOR PERSONAL INJURY AND DEFECTIVE PRODUCTS.</strong>
+        </p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            16. APPLICABLE LAW</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            This site is created and controlled by SAP in the United States. Therefore, the laws of the state of California will govern this TOU without giving effect to any principles of conflicts of laws. You also agree to comply with all laws from the country in which You reside that are applicable to the transmission of data on the Internet, including, but, not limited to laws governing the use of encryption and laws governing the transmission of data across international boundaries, into prohibited countries, and containing personally identifiable information.</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            17. SURVIVAL</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            Your confidentiality obligations hereunder shall survive termination of Your account. Upon any termination of Your account, or SAP&rsquo;s written request, You must cease use of Confidential Information, SAP Software, and/or Services and return or destroy all Confidential Information in Your possession or control.</p>
+
+        <p>
+            <span style="line-height: 22px; font-size: 18px;">18. WAIVER AND SEVERABILITY</span></p>
+
+        <p>
+            The failure of SAP to exercise or enforce any right or provision of this TOU shall not constitute a waiver of such right or provision. To the extent that any provision in this TOU shall be found to be unenforceable, such provision shall be modified in such a manner so as to make this TOU as modified, legal and enforceable under applicable laws and the balance of the provisions of this TOU shall not be affected thereby.</p>
+
+        <h3 style="margin: 10px 0px; color: rgb(60, 60, 60); line-height: 22px; font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; text-rendering: optimizelegibility;">
+            19. EXPORT CONTROL</h3>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            You agree that Your use of the Experience Community Website or the Services will be in compliance with U.S. and EU export control laws and executive orders. The information provided on and through the Experience Community Website may be deemed in some cases to be controlled technology and subject to the export control restrictions of the United States and the European Union.</p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            IT IS YOUR OBLIGATION TO VERIFY AND COMPLY WITH ALL APPLICABLE LAWS AND REGULATIONS OF THE UNITED STATES PERTAINING TO ANY POTENTIAL ACCESS, TRANSFER AND USE OF ANY INFORMATION HEREIN WHICH MAY BE DEEMED TO BE &quot;CONTROLLED&quot; AS DEFINED BY LAW.</p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            The Experience Community Website may not be accessed or used by any national of certain countries or groups against which the United States and/or European Union have instituted sanctions (including Iran, Cuba, North Korea, Syria, Sudan and Zimbabwe), Specially &lsquo;Designated Nationals,&rsquo; and other proscribed persons who are listed on the &lsquo;Denied Parties&rsquo; list. Further restrictions apply to any end user who will utilize Content provided on the Experience Community Website in the design, development or production of nuclear, chemical or biological weapons, or rocket systems, space launch vehicles, and sounding rockets, or unmanned air vehicle systems; or any end user who has been prohibited from participating in the United States and/or European Union export transactions by any agency of the United States government or European Union.</p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            <strong>Access Outside of the United States and European Union.</strong> If You are accessing the Experience Community Website from outside the United States or the European Union, You are doing so at Your own risk, and You remain fully responsible and liable for familiarity and compliance with the terms of this TOU as well as with the laws, regulations, directives, codes, and rules of the United States and European Union, including its import and export compliance laws and regulations, as well those of the jurisdiction from which You are accessing the Experience Community Website, and any other applicable jurisdiction which may be involved in the access, transmission, routing, receipt, disclosure, storage or use of information on the Experience Community Website, or any commercial transactions conducted on or through the Experience Community Website.
+        </p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            Due to technical uncertainties preventing verification of the identity and ultimate point of access by any person attempting to access or use the Experience Community Website, Your access of the Experience Community Website, including the presentment of any authorized user ID and password, constitutes Your express representation that (1) the person attempting access thereunder is not a national of any such sanctioned country or group or a Specially Designated National, and (2) is not included on such Denied Parties list, 3) has not been prohibited from participating in United States and/or European Union export transactions; 4) such use is not restricted, and (5) that, as an authorized User, You have not disclosed or provided such password and user ID to any such person for use under Your registration. Users shall be fully liable and subject to prosecution to the full extent of the law for any violations of this paragraph.</p>
+
+        <p>
+            &nbsp;</p>
+
+        <p style="margin: 0px 0px 10px; color: rgb(60, 60, 60); line-height: 18px; font-family: Arial, sans-serif;">
+            Updated: December 21th, 2012</p>
+
+    </div>
+
+    <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn btn-flat linkToModal">Close</a>
+    </div>
+</div>
+
+
+<script src="./js/jquery.js"></script>
+<script src="./js/html5shiv.min.js"></script>
+<script src="./js/respond.min.js"></script>
+<script src="./js/selectivizr-min.min.js"></script>
+<!-- <script src="./js/bootstrap.min.js"></script> -->
+<script src="./js/script.min.js"></script>
+<!-- <script src="./js/content-switcher.min.js"></script> -->
+<!-- <script src="./js/jquery.videoBG.min.js"></script> -->
+<script src="./js/bootstrap-transition.js"></script>
+<!-- <script src="./js/bootstrap-alert.js"></script> -->
+<script src="./js/bootstrap-modal.js"></script>
+<!-- <script src="./js/bootstrap-dropdown.js"></script> -->
+<!-- <script src="./js/bootstrap-scrollspy.js"></script> -->
+<!-- <script src="./js/bootstrap-tab.js"></script> -->
+<!-- <script src="./js/bootstrap-tooltip.js"></script> -->
+<!-- <script src="./js/bootstrap-popover.js"></script> -->
+<script src="./js/bootstrap-button.js"></script>
+<!-- <script src="./js/bootstrap-collapse.js"></script> -->
+<script src="./js/bootstrap-carousel.js"></script>
+<!-- <script src="./js/bootstrap-typeahead.js"></script> -->
+<!-- <script src="./js/holder/holder.js"></script> -->
+<script src="./js/md5.js"></script>
+<script src="./js/main.js"></script>
+
+
+</body>
+
+
+<!-- <html lang="en">                                                                                                                                                                                                                                                                      -->
+<!--   <head>                                                                                                                                                                                                                                                                              -->
+<!--     <meta charset="utf-8">                                                                                                                                                                                                                                                            -->
+<!--     <title>Carousel Template &middot; Bootstrap</title>                                                                                                                                                                                                                               -->
+<!--   </head>                                                                                                                                                                                                                                                                             -->
+
+<!--   <body>                                                                                                                                                                                                                                                                              -->
+
+
+
+
+<!-- <div class="navbar navbar-inverse navbar-fixed-top">                                                                                                                                                                                                                                  -->
+<!--       <div class="navbar-inner">                                                                                                                                                                                                                                                      -->
+<!--         <div class="container">                                                                                                                                                                                                                                                       -->
+<!--           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">                                                                                                                                                                            -->
+<!--             <span class="icon-bar"></span>                                                                                                                                                                                                                                            -->
+<!--             <span class="icon-bar"></span>                                                                                                                                                                                                                                            -->
+<!--             <span class="icon-bar"></span>                                                                                                                                                                                                                                            -->
+<!--           </button>                                                                                                                                                                                                                                                                   -->
+<!--           <a class="brand" href="#">Project name</a>                                                                                                                                                                                                                                  -->
+<!--           <div class="nav-collapse collapse">                                                                                                                                                                                                                                         -->
+<!--             <ul class="nav">                                                                                                                                                                                                                                                          -->
+<!--               <li class="active"><a href="#">Home</a></li>                                                                                                                                                                                                                            -->
+<!--               <li><a href="#about">About</a></li>                                                                                                                                                                                                                                     -->
+<!--               <li><a href="#contact">Contact</a></li>                                                                                                                                                                                                                                 -->
+<!--               <li class="dropdown">                                                                                                                                                                                                                                                   -->
+<!--                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>                                                                                                                                                                         -->
+<!--                 <ul class="dropdown-menu">                                                                                                                                                                                                                                            -->
+<!--                   <li><a href="#">Action</a></li>                                                                                                                                                                                                                                     -->
+<!--                   <li><a href="#">Another action</a></li>                                                                                                                                                                                                                             -->
+<!--                   <li><a href="#">Something else here</a></li>                                                                                                                                                                                                                        -->
+<!--                   <li class="divider"></li>                                                                                                                                                                                                                                           -->
+<!--                   <li class="nav-header">Nav header</li>                                                                                                                                                                                                                              -->
+<!--                   <li><a href="#">Separated link</a></li>                                                                                                                                                                                                                             -->
+<!--                   <li><a href="#">One more separated link</a></li>                                                                                                                                                                                                                    -->
+<!--                 </ul>                                                                                                                                                                                                                                                                 -->
+<!--               </li>                                                                                                                                                                                                                                                                   -->
+<!--             </ul>                                                                                                                                                                                                                                                                     -->
+<!--             <form class="navbar-form pull-right">                                                                                                                                                                                                                                     -->
+<!--               <input class="span2" type="text" placeholder="Email">                                                                                                                                                                                                                   -->
+<!--               <input class="span2" type="password" placeholder="Password">                                                                                                                                                                                                            -->
+<!--               <button type="submit" class="btn">Sign in</button>                                                                                                                                                                                                                      -->
+<!--             </form>                                                                                                                                                                                                                                                                   -->
+<!--           </div>|+/.nav-collapse +|                                                                                                                                                                                                                                                   -->
+<!--         </div>                                                                                                                                                                                                                                                                        -->
+<!--       </div>                                                                                                                                                                                                                                                                          -->
+<!--     </div>                                                                                                                                                                                                                                                                            -->
+
+
+
+
+<!--     |+ Marketing messaging and featurettes                                                                                                                                                                                                                                            -->
+<!--     ================================================== +|                                                                                                                                                                                                                             -->
+<!--     |+ Wrap the rest of the page in another container to center all the content. +|                                                                                                                                                                                                   -->
+
+<!--     <div class="container marketing">                                                                                                                                                                                                                                                 -->
+
+<!--       |+ Three columns of text below the carousel +|                                                                                                                                                                                                                                  -->
+<!--       <div class="row">                                                                                                                                                                                                                                                               -->
+<!--         <div class="span4">                                                                                                                                                                                                                                                           -->
+<!--           <img class="img-circle" data-src="holder.js/140x140">                                                                                                                                                                                                                       -->
+<!--           <h2>Heading</h2>                                                                                                                                                                                                                                                            -->
+<!--           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>         -->
+<!--           <p><a class="btn" href="#">View details &raquo;</a></p>                                                                                                                                                                                                                     -->
+<!--         </div>|+ /.span4 +|                                                                                                                                                                                                                                                           -->
+<!--         <div class="span4">                                                                                                                                                                                                                                                           -->
+<!--           <img class="img-circle" data-src="holder.js/140x140">                                                                                                                                                                                                                       -->
+<!--           <h2>Heading</h2>                                                                                                                                                                                                                                                            -->
+<!--           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> -->
+<!--           <p><a class="btn" href="#">View details &raquo;</a></p>                                                                                                                                                                                                                     -->
+<!--         </div>|+ /.span4 +|                                                                                                                                                                                                                                                           -->
+<!--         <div class="span4">                                                                                                                                                                                                                                                           -->
+<!--           <img class="img-circle" data-src="holder.js/140x140">                                                                                                                                                                                                                       -->
+<!--           <h2>Heading</h2>                                                                                                                                                                                                                                                            -->
+<!--           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>                  -->
+<!--           <p><a class="btn" href="#">View details &raquo;</a></p>                                                                                                                                                                                                                     -->
+<!--         </div>|+ /.span4 +|                                                                                                                                                                                                                                                           -->
+<!--       </div>|+ /.row +|                                                                                                                                                                                                                                                               -->
+
+
+<!--       |+ START THE FEATURETTES +|                                                                                                                                                                                                                                                     -->
+
+<!--       <hr class="featurette-divider">                                                                                                                                                                                                                                                 -->
+
+<!--       <div class="featurette">                                                                                                                                                                                                                                                        -->
+<!--         <img class="featurette-image pull-right lazy-fading" src="./img/browser-icon-chrome.png">                                                                                                                                                                                     -->
+<!--         <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>                                                                                                                                                               -->
+<!--         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>                                            -->
+<!--       </div>                                                                                                                                                                                                                                                                          -->
+
+<!--       <hr class="featurette-divider">                                                                                                                                                                                                                                                 -->
+
+<!--       <div class="featurette">                                                                                                                                                                                                                                                        -->
+<!--         <img class="featurette-image pull-left lazy-fading" src="./img/browser-icon-firefox.png">                                                                                                                                                                                     -->
+<!--         <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>                                                                                                                                                                     -->
+<!--         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>                                            -->
+<!--       </div>                                                                                                                                                                                                                                                                          -->
+
+<!--       <hr class="featurette-divider">                                                                                                                                                                                                                                                 -->
+
+<!--       <div class="featurette">                                                                                                                                                                                                                                                        -->
+<!--         <img class="featurette-image pull-right lazy-fading" src="./img/browser-icon-safari.png">                                                                                                                                                                                     -->
+<!--         <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>                                                                                                                                                                               -->
+<!--         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>                                            -->
+<!--       </div>                                                                                                                                                                                                                                                                          -->
+
+<!--       <hr class="featurette-divider">                                                                                                                                                                                                                                                 -->
+
+<!--       |+ /END THE FEATURETTES +|                                                                                                                                                                                                                                                      -->
+
+
+
+
+
+<!--       |+ FOOTER +|                                                                                                                                                                                                                                                                    -->
+<!--       <footer>                                                                                                                                                                                                                                                                        -->
+<!--         <p class="pull-right"><a href="#">Back to top</a></p>                                                                                                                                                                                                                         -->
+<!--         <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>                                                                                                                                                                              -->
+<!--       </footer>                                                                                                                                                                                                                                                                       -->
+
+<!--     </div>|+ /.container +|                                                                                                                                                                                                                                                           -->
+
+
+
+<!--     |+ Le javascript                                                                                                                                                                                                                                                                  -->
+<!--     ================================================== +|                                                                                                                                                                                                                             -->
+<!--     |+ Placed at the end of the document so the pages load faster +|                                                                                                                                                                                                                  -->
+<!--   </body>                                                                                                                                                                                                                                                                             -->
+<!-- </html>                                                                                                                                                                                                                                                                               -->
+
+
+
+
+</html>
